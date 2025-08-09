@@ -4,6 +4,8 @@ import Head from "next/head";
 import Link from "next/link"; // add at the top
 import { useEffect, useState } from "react";
 import type { Booking } from "@/components/BookingForm";
+import { useSession, signIn } from "next-auth/react";
+
 // import { loadBookings, clearBookings, deleteBooking } from "@/utils/bookings";
 // import { clearBookings } from "@/utils/bookings";
 // import type { Booking as PrismaBooking } from "@prisma/client"; // Prisma DB type
@@ -68,6 +70,14 @@ export default function MyBookings(): JSX.Element {
     );
     setBookings([]);
   };
+
+  const { status } = useSession();
+
+useEffect(() => {
+    if (status === "unauthenticated") {
+        signIn(undefined, { callbackUrl: "/bookings" }); // send to sign-in
+    }
+    }, [status]);
 
   return (
     <>

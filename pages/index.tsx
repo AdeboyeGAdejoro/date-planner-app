@@ -206,6 +206,13 @@ async function handleConfirmBooking(newBooking: Booking): Promise<void> {
             )}
           </section>
         </div>
+        <footer className="mt-12 border-t pt-6 text-xs text-gray-500">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <span>date-planner-app</span>
+            <span>&#169; Adeboye George Adejoro</span>
+          </div>
+</footer>
+
       </main>
       {bookingFor && (
         <BookingForm
