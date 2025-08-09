@@ -71,7 +71,8 @@ export default async function handler(
     res.setHeader("Allow", "GET, POST");
     return res.status(405).json({ error: "Method not allowed" });
   } catch (err) {
-    console.error(err);
-    return res.status(500).json({ error: "Server error" });
-  }
+  console.error(err);
+  const msg = err instanceof Error ? err.message : "Server error";
+  return res.status(500).json({ error: msg });
+}
 }
