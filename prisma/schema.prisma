@@ -1,0 +1,22 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Booking {
+  id            String   @id @default(uuid())
+  locationId    String
+  locationName  String
+  dateType      String    // Dining, Movies, Museums/Exhibitions
+  name          String
+  email         String
+  people        Int
+  datetime      DateTime  // When the reservation is for
+  submittedAt   DateTime  @default(now()) // When the user booked
+  notes         String?
+}
