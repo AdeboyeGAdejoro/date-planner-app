@@ -9,6 +9,8 @@ import rawLocations from "@/data/locations.json";
 import { useEffect } from "react";
 import LocationCard, { type Location } from "@/components/LocationCard";
 import BookingForm, { type Booking } from "@/components/BookingForm";
+import { useSession, signOut } from "next-auth/react";
+
 // import { loadBookings, saveBookings } from "@/utils/bookings";
 
 
@@ -25,6 +27,8 @@ export default function Home() {
   const [selectedCity, setSelectedCity] = useState<string>("");
   const [bookingFor, setBookingFor] = useState<Location | null>(null);
   // const [bookings, setBookings] = useState<Booking[]>([]);
+  const { status } = useSession(); // "authenticated" | "unauthenticated" | "loading"
+
 
 
   // Parse locations as typed
@@ -136,9 +140,33 @@ async function handleConfirmBooking(newBooking: Booking): Promise<void> {
             <p className="text-gray-600">
               Filter by country, city, and date type to see relevant spots.
             </p>
-            <Link href="/bookings" className="text-blue-600 underline">
-              My Bookings
-            </Link>
+            <nav className="flex items-center gap-4 text-sm">
+              {status === "authenticated" ? (
+                <>
+                  <Link href="/bookings" className="text-blue-600 underline">
+                    My Bookings
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => signOut({ callbackUrl: "/" })}
+                    className="rounded-lg border px-3 py-1.5 hover:bg-gray-50"
+                    aria-label="Sign out"
+                  >
+                    Sign out
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link href="/signin" className="text-blue-600 underline">
+                    Sign in
+                  </Link>
+                  <Link href="/signup" className="text-blue-600 underline">
+                    Sign up
+                  </Link>
+                </>
+              )}
+            </nav>
+
           </header>
 
           {/* Filters */}
