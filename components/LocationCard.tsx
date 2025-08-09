@@ -40,6 +40,8 @@ export default function LocationCard({
   } = location;
 
   const countryLabel: string = countryLabels[country] ?? country;
+  const src0 = images?.[0];
+  const imgSrc = src0?.startsWith("http") ? src0 : (src0 ?? "");
 
   return (
     <article className="rounded-xl border p-4 sm:p-5 flex items-start justify-between gap-4">
@@ -77,13 +79,13 @@ export default function LocationCard({
       </div>
 
       {/* Right block: image */}
-      {images?.[0] && (
+      {src0 && (
         <div className="shrink-0">
           <Image
-            src={images[0]}
+            src={imgSrc}
             alt={name}
-            width={144}   // ≈ Tailwind w-36
-            height={96}   // ≈ Tailwind h-24
+            width={144}
+            height={96}
             className="h-24 w-36 object-cover rounded-md border"
           />
         </div>
