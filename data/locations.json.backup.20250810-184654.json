@@ -1,0 +1,274 @@
+[
+  {
+    "id": "node/350460874",
+    "type": "Movies",
+    "name": "Babylon Kreuzberg",
+    "address": "Dresdener Straße 126, 10999 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://yorck.de/kinos/babylon-kreuzberg",
+    "images": []
+  },
+  {
+    "id": "node/297512119",
+    "type": "Movies",
+    "name": "Cinema",
+    "address": "Bundesallee 111, 12161 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.cineplex.de/berlin-titania/",
+    "images": []
+  },
+  {
+    "id": "cinema-lumiere-berlin",
+    "type": "Movies",
+    "name": "Cinema Lumière",
+    "address": "12 Kino Platz",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.3,
+    "link": "https://example.com/lumiere",
+    "images": [
+      "https://picsum.photos/seed/lumiere/600/400"
+    ]
+  },
+  {
+    "id": "node/272004025",
+    "type": "Movies",
+    "name": "Cineplex",
+    "address": "",
+    "country": "",
+    "city": "",
+    "rating": 0,
+    "link": "http://www.cineplex.de",
+    "images": []
+  },
+  {
+    "id": "node/333351711",
+    "type": "Movies",
+    "name": "Cineplex",
+    "address": "",
+    "country": "",
+    "city": "",
+    "rating": 0,
+    "link": "https://www.cineplex.de/berlin-neukoelln/",
+    "images": []
+  },
+  {
+    "id": "node/79615774",
+    "type": "Movies",
+    "name": "CineStar",
+    "address": "",
+    "country": "",
+    "city": "",
+    "rating": 0,
+    "link": "https://www.openstreetmap.org/node/79615774",
+    "images": []
+  },
+  {
+    "id": "node/313942258",
+    "type": "Movies",
+    "name": "CineStar",
+    "address": "",
+    "country": "",
+    "city": "",
+    "rating": 0,
+    "link": "https://www.openstreetmap.org/node/313942258",
+    "images": []
+  },
+  {
+    "id": "node/277004600",
+    "type": "Movies",
+    "name": "Cosima",
+    "address": "Sieglindestraße 10, 12159 Berlin",
+    "country": "",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "http://cosima-filmtheater.de/",
+    "images": []
+  },
+  {
+    "id": "node/29040741",
+    "type": "Movies",
+    "name": "Filmrauschpalast",
+    "address": "Lehrter Straße 35, 10557 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.filmrausch.de/",
+    "images": []
+  },
+  {
+    "id": "node/350460866",
+    "type": "Movies",
+    "name": "fsk - Kino am Oranienplatz",
+    "address": "Segitzdamm 2, 10969 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://fsk-kino.peripherfilm.de/",
+    "images": []
+  },
+  {
+    "id": "node/343650200",
+    "type": "Movies",
+    "name": "Hackesche Höfe Kino",
+    "address": "Rosenthaler Straße 40-41, 10178 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.hoefekino.de/",
+    "images": []
+  },
+  {
+    "id": "node/312618622",
+    "type": "Movies",
+    "name": "Kant Kino",
+    "address": "Kantstraße 54, 10627 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://yorck.de/kinos/kant-kino",
+    "images": []
+  },
+  {
+    "id": "node/256754256",
+    "type": "Movies",
+    "name": "Kino Babylon",
+    "address": "Rosa-Luxemburg-Straße 30, 10178 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "http://www.babylonberlin.de",
+    "images": []
+  },
+  {
+    "id": "node/343650283",
+    "type": "Movies",
+    "name": "Kino Central",
+    "address": "Rosenthaler Straße 39, 10178 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "http://www.kino-central.de",
+    "images": []
+  },
+  {
+    "id": "node/299288097",
+    "type": "Movies",
+    "name": "Kino im Kulturhaus Spandau",
+    "address": "",
+    "country": "",
+    "city": "",
+    "rating": 0,
+    "link": "http://www.kinoimkulturhaus.de/",
+    "images": []
+  },
+  {
+    "id": "node/251559871",
+    "type": "Movies",
+    "name": "Kino Intimes",
+    "address": "Boxhagener Straße 107, 10245 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.kino-zeit.de/kinoprogramm/berlin/kino-intimes-berlin",
+    "images": []
+  },
+  {
+    "id": "node/273477667",
+    "type": "Movies",
+    "name": "Kino Spreehöfe",
+    "address": "Wilhelminenhofstraße 89, 12459 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.kino-spreehoefe.de",
+    "images": []
+  },
+  {
+    "id": "node/281887442",
+    "type": "Movies",
+    "name": "Kino Toni & Tonino",
+    "address": "Antonplatz 1, 13086 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.kino-toni.de/",
+    "images": []
+  },
+  {
+    "id": "node/339825650",
+    "type": "Movies",
+    "name": "Lichtblick",
+    "address": "Kastanienallee 77, 10435 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.lichtblick-kino.org/",
+    "images": []
+  },
+  {
+    "id": "museum-modern-stuff-berlin",
+    "type": "Museums/Exhibitions",
+    "name": "Museum of Modern Stuff",
+    "address": "1 Gallery Way",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.7,
+    "link": "https://example.com/momos",
+    "images": [
+      "https://picsum.photos/seed/momos/600/400"
+    ]
+  },
+  {
+    "id": "sakura-sushi-berlin",
+    "type": "Dining",
+    "name": "Sakura Sushi Bar",
+    "address": "123 Tokyo Lane",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.6,
+    "link": "https://example.com/sakura",
+    "images": [
+      "https://picsum.photos/seed/sakura/600/400"
+    ]
+  },
+  {
+    "id": "node/331345531",
+    "type": "Movies",
+    "name": "Sputnik Kino",
+    "address": "Hasenheide 54, 10967 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.sputnik-kino.com/",
+    "images": []
+  },
+  {
+    "id": "trattoria-roma-berlin",
+    "type": "Dining",
+    "name": "Trattoria Roma",
+    "address": "45 Via Centro",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.4,
+    "link": "https://example.com/roma",
+    "images": [
+      "https://picsum.photos/seed/roma/600/400"
+    ]
+  },
+  {
+    "id": "node/101186634",
+    "type": "Movies",
+    "name": "UCI Am Eastgate",
+    "address": "Märkische Allee 176-178, 12681 Berlin",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 0,
+    "link": "https://www.uci-kinowelt.de/kinoprogramm/berlin-am-eastgate/44",
+    "images": []
+  }
+]

@@ -41,7 +41,9 @@ export default function LocationCard({
 
   const countryLabel: string = countryLabels[country] ?? country;
   const src0 = images?.[0];
-  const imgSrc = src0?.startsWith("http") ? src0 : (src0 ?? "");
+  const hasImage = typeof src0 === "string" && src0.startsWith("http");
+  const imgSrc = hasImage ? src0 : "";
+  const displayRating = rating > 0 ? `⭐ ${rating.toFixed(1)}` : "No rating yet";
 
   return (
     <article className="rounded-xl border p-4 sm:p-5 flex items-start justify-between gap-4">
@@ -49,11 +51,11 @@ export default function LocationCard({
       <div className="min-w-0">
         <h3 className="text-lg font-semibold truncate">{name}</h3>
         <p className="text-sm text-gray-600">
-          {type} · {city}, {countryLabel}
+          {type} · {city || "—"}, {countryLabel}
         </p>
-        <p className="text-sm text-gray-600">{address}</p>
+        {address && <p className="text-sm text-gray-600">{address}</p>}
 
-        <p className="text-sm text-gray-700 mt-1">⭐ {rating.toFixed(1)}</p>
+        <p className="text-sm text-gray-700 mt-1">{displayRating}</p>
 
         <div className="mt-2 flex items-center gap-3">
           <a
@@ -78,9 +80,9 @@ export default function LocationCard({
         </div>
       </div>
 
-      {/* Right block: image */}
-      {src0 && (
-        <div className="shrink-0">
+      {/* Right block: image or placeholder */}
+      <div className="shrink-0">
+        {hasImage ? (
           <Image
             src={imgSrc}
             alt={name}
@@ -88,8 +90,12 @@ export default function LocationCard({
             height={96}
             className="h-24 w-36 object-cover rounded-md border"
           />
-        </div>
-      )}
+        ) : (
+          <div className="h-24 w-36 rounded-md border grid place-items-center text-xs text-gray-500">
+            No image
+          </div>
+        )}
+      </div>
     </article>
   );
 }

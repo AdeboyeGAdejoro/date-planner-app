@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sakura-sushi-berlin",
+    "type": "Dining",
+    "name": "Sakura Sushi Bar",
+    "address": "123 Tokyo Lane",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.6,
+    "link": "https://example.com/sakura",
+    "images": ["https://picsum.photos/seed/sakura/600/400"]
+  },
+  {
+    "id": "trattoria-roma-berlin",
+    "type": "Dining",
+    "name": "Trattoria Roma",
+    "address": "45 Via Centro",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.4,
+    "link": "https://example.com/roma",
+    "images": ["https://picsum.photos/seed/roma/600/400"]
+  },
+  {
+    "id": "cinema-lumiere-berlin",
+    "type": "Movies",
+    "name": "Cinema Lumière",
+    "address": "12 Kino Platz",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.3,
+    "link": "https://example.com/lumiere",
+    "images": ["https://picsum.photos/seed/lumiere/600/400"]
+  },
+  {
+    "id": "museum-modern-stuff-berlin",
+    "type": "Museums/Exhibitions",
+    "name": "Museum of Modern Stuff",
+    "address": "1 Gallery Way",
+    "country": "DE",
+    "city": "Berlin",
+    "rating": 4.7,
+    "link": "https://example.com/momos",
+    "images": ["https://picsum.photos/seed/momos/600/400"]
+  }
+]

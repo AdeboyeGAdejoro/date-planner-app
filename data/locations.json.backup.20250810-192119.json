@@ -33,28 +33,6 @@
     "images": []
   },
   {
-    "id": "node/3679274650",
-    "type": "Museums/Exhibitions",
-    "name": "African Artists' Foundation",
-    "address": "3 Isiola Oyekan close 3b, Lagos",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.africanartists.org/",
-    "images": []
-  },
-  {
-    "id": "way/363797139",
-    "type": "Museums/Exhibitions",
-    "name": "African Artists' Foundation",
-    "address": "Raymond Njoku Street 54, Lagos",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.openstreetmap.org/way/363797139",
-    "images": []
-  },
-  {
     "id": "node/26735749",
     "type": "Dining",
     "name": "Aida",
@@ -63,17 +41,6 @@
     "city": "Berlin",
     "rating": 0,
     "link": "https://www.aida-restaurant.de/",
-    "images": []
-  },
-  {
-    "id": "node/4882134391",
-    "type": "Museums/Exhibitions",
-    "name": "Aircraft",
-    "address": "",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.openstreetmap.org/node/4882134391",
     "images": []
   },
   {
@@ -417,17 +384,6 @@
     "city": "Berlin",
     "rating": 0,
     "link": "https://www.deutschlandmuseum.de/",
-    "images": []
-  },
-  {
-    "id": "node/8567630851",
-    "type": "Museums/Exhibitions",
-    "name": "Didi Museum",
-    "address": "",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "http://didimuseum.org/",
     "images": []
   },
   {
@@ -893,17 +849,6 @@
     "images": []
   },
   {
-    "id": "node/889227741",
-    "type": "Museums/Exhibitions",
-    "name": "Lasu Museum",
-    "address": "",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.openstreetmap.org/node/889227741",
-    "images": []
-  },
-  {
     "id": "node/339825650",
     "type": "Movies",
     "name": "Lichtblick",
@@ -1038,28 +983,6 @@
     "images": []
   },
   {
-    "id": "node/6284851976",
-    "type": "Museums/Exhibitions",
-    "name": "National Gallery of Modern Arts",
-    "address": "",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.openstreetmap.org/node/6284851976",
-    "images": []
-  },
-  {
-    "id": "way/671991295",
-    "type": "Museums/Exhibitions",
-    "name": "National Museum",
-    "address": "Lagos",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.openstreetmap.org/way/671991295",
-    "images": []
-  },
-  {
     "id": "node/3013698730",
     "type": "Dining",
     "name": "New China Restaurant",
@@ -1068,28 +991,6 @@
     "city": "Lagos",
     "rating": 0,
     "link": "https://www.openstreetmap.org/node/3013698730",
-    "images": []
-  },
-  {
-    "id": "way/363752678",
-    "type": "Museums/Exhibitions",
-    "name": "Nike Art Gallery",
-    "address": "",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://nikeartfoundation.com/about-us/",
-    "images": []
-  },
-  {
-    "id": "way/363806151",
-    "type": "Museums/Exhibitions",
-    "name": "Old Government Printing Press",
-    "address": "Broad Street 6, Lagos",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.openstreetmap.org/way/363806151",
     "images": []
   },
   {
@@ -1378,39 +1279,6 @@
     "city": "Berlin",
     "rating": 0,
     "link": "https://www.taverna-athos-berlin.de",
-    "images": []
-  },
-  {
-    "id": "way/597498797",
-    "type": "Museums/Exhibitions",
-    "name": "TCA Gallery",
-    "address": "Block B10 Crescent B Suite 418, Victoria Island",
-    "country": "NG",
-    "city": "Victoria Island",
-    "rating": 0,
-    "link": "https://www.openstreetmap.org/way/597498797",
-    "images": []
-  },
-  {
-    "id": "way/363799718",
-    "type": "Museums/Exhibitions",
-    "name": "Terra Kulture",
-    "address": "",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://www.terrakulture.com/",
-    "images": []
-  },
-  {
-    "id": "node/8567630874",
-    "type": "Museums/Exhibitions",
-    "name": "Terra Kulture Gallery",
-    "address": "",
-    "country": "NG",
-    "city": "Lagos",
-    "rating": 0,
-    "link": "https://terrakulturegallery.com/",
     "images": []
   },
   {

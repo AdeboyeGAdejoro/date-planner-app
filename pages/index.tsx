@@ -84,6 +84,21 @@ export default function Home() {
       );
   }, [locations, selectedCountry, selectedCity, selectedTypes]);
 
+  const [page, setPage] = useState(1);
+const itemsPerPage = 10;
+
+const totalPages = Math.max(1, Math.ceil(filtered.length / itemsPerPage));
+const currentPage = Math.min(page, totalPages);
+
+const start = (currentPage - 1) * itemsPerPage;
+const pageItems = filtered.slice(start, start + itemsPerPage);
+
+// When filters change, reset to page 1
+useEffect(() => {
+  setPage(1);
+}, [locations, selectedCountry, selectedCity, selectedTypes]);
+
+
   // Nice little label for types chosen
   const selectedTypesLabel = useMemo(() => {
     if (selectedTypes.length === 0) return "All types";
@@ -210,28 +225,83 @@ async function handleConfirmBooking(newBooking: Booking): Promise<void> {
               {selectedCity ? `· ${selectedCity}` : ""} · {selectedTypesLabel}
             </p>
           </section>
-
           {/* Results */}
           <section className="bg-white p-6 rounded-xl border">
             <h2 className="text-xl font-semibold mb-4">
               Results ({filtered.length})
             </h2>
+
             {filtered.length === 0 ? (
               <p className="text-gray-600">No locations match your filters yet.</p>
             ) : (
-              <div className="space-y-4">
-                {filtered.map((loc) => (
-                  <LocationCard
-                    key={loc.id}
-                    location={loc}
-                    countryLabels={COUNTRY_LABELS}
-                    onBook={(id) => {
-                      const match = filtered.find((x) => x.id === id);
-                      if (match) setBookingFor(match);
-                    }}
-                  />
-                ))}
-              </div>              
+              <>
+                {/* Top pager */}
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="text-sm text-gray-600">
+                    {`${start + 1}–${Math.min(start + itemsPerPage, filtered.length)} of ${filtered.length}`}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <button
+                      className="px-3 py-1.5 rounded border disabled:opacity-50"
+                      onClick={() => setPage(p => Math.max(1, p - 1))}
+                      disabled={currentPage <= 1}
+                      aria-label="Previous page"
+                    >
+                      ‹ Prev
+                    </button>
+                    <span className="text-sm">Page {currentPage} of {totalPages}</span>
+                    <button
+                      className="px-3 py-1.5 rounded border disabled:opacity-50"
+                      onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                      disabled={currentPage >= totalPages}
+                      aria-label="Next page"
+                    >
+                      Next ›
+                    </button>
+                  </div>
+                </div>
+
+                {/* Page items */}
+                <div className="space-y-4">
+                  {pageItems.map((loc) => (
+                    <LocationCard
+                      key={loc.id}
+                      location={loc}
+                      countryLabels={COUNTRY_LABELS}
+                      onBook={(id) => {
+                        const match = filtered.find((x) => x.id === id);
+                        if (match) setBookingFor(match);
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {/* Bottom pager (optional but nice) */}
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="text-sm text-gray-600">
+                    {`${start + 1}–${Math.min(start + itemsPerPage, filtered.length)} of ${filtered.length}`}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <button
+                      className="px-3 py-1.5 rounded border disabled:opacity-50"
+                      onClick={() => setPage(p => Math.max(1, p - 1))}
+                      disabled={currentPage <= 1}
+                      aria-label="Previous page"
+                    >
+                      ‹ Prev
+                    </button>
+                    <span className="text-sm">Page {currentPage} of {totalPages}</span>
+                    <button
+                      className="px-3 py-1.5 rounded border disabled:opacity-50"
+                      onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                      disabled={currentPage >= totalPages}
+                      aria-label="Next page"
+                    >
+                      Next ›
+                    </button>
+                  </div>
+                </div>
+              </>
             )}
           </section>
         </div>
