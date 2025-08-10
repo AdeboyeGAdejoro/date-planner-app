@@ -10,15 +10,16 @@ import { useEffect } from "react";
 import LocationCard, { type Location } from "@/components/LocationCard";
 import BookingForm, { type Booking } from "@/components/BookingForm";
 import { useSession, signOut } from "next-auth/react";
+import { COUNTRY_LABELS } from "@/data/countryLabels";
 
 // import { loadBookings, saveBookings } from "@/utils/bookings";
 
 
 
 // Optional country-name map (expand later as you add countries)
-const COUNTRY_LABELS: Record<string, string> = {
-  DE: "Germany",
-};
+// const COUNTRY_LABELS: Record<string, string> = {
+//   DE: "Germany",
+// };
 
 export default function Home() {
   // --- State ---
